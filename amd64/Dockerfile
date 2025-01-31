@@ -1,4 +1,4 @@
-FROM martinussuherman/alpine:3.13-amd64-glibc
+FROM jeanblanchard/alpine-glibc:3.19
 
 ENV \
    # container/su-exec UID \
@@ -14,7 +14,7 @@ ENV \
    # container user home dir \
    EHOME=/home/vscode \
    # code-server version \
-   VERSION=3.12.0
+   VERSION=4.96.4
 
 COPY code-server /usr/bin/
 RUN chmod +x /usr/bin/code-server
